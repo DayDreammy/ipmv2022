@@ -83,6 +83,9 @@
 *这里是主要的笔记内容*
 
 ***
+author：Yi Yang & Zhengpu Wang
+
+![](image/image_x4NFs4h9wU.png)
 
 # 1. Preliminaries 线性代数预备知识
 
