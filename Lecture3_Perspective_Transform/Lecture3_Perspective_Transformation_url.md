@@ -86,11 +86,11 @@
 
 author：Yi Yang & Zhengpu Wang
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_x4NFs4h9wU.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_x4NFs4h9wU.png)
 
 # 1. Preliminaries 线性代数预备知识
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_p3rb1Cv66F.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_p3rb1Cv66F.png)
 
 ## 1.1 向量点乘 dot pruduct
 
@@ -98,7 +98,7 @@ $$
 \boldsymbol a · \boldsymbol b \\=a\_1b\_1 + a\_2b\_2+a\_3b\_3 \\= ||\boldsymbol a||\_2||\boldsymbol b||\_2cos\theta\\=\sqrt{\boldsymbol a·\boldsymbol a}\sqrt{\boldsymbol b·\boldsymbol b}\cos \theta \\=\sqrt{\boldsymbol a^T \boldsymbol a}\sqrt{\boldsymbol b^T \boldsymbol b}\cos \theta
 $$
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_9uEBsPYv7m.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_9uEBsPYv7m.png)
 
 ## 1.2 范数
 
@@ -120,7 +120,7 @@ $\lVert\boldsymbol a\rVert_{+\infty}  = \max_i  \lvert a_i\rvert$ ，$\lVert\bol
 
 [(35 封私信 / 28 条消息) 0 范数、1 范数、2 范数有什么区别？ - 知乎 (zhihu.com)](https://www.zhihu.com/question/20473040?from=profile_question_card "(35 封私信 / 28 条消息) 0 范数、1 范数、2 范数有什么区别？ - 知乎 (zhihu.com)")
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_Bxf1T_Y7DF.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_Bxf1T_Y7DF.png)
 
 ## 1.3向量叉乘 cross pruduct
 
@@ -129,11 +129,11 @@ $$
 =|| \boldsymbol a||\_2|| \boldsymbol b||\_2\sin(\theta)\boldsymbol n
 $$
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_kWyCz3Yjue.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_kWyCz3Yjue.png)
 
 ## 1.4 反对称矩阵
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_yV-498H8b-.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_yV-498H8b-.png)
 
 $$
 [a]_x=\left[
@@ -173,13 +173,13 @@ $$
 
 #### 矩阵求导
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_E0LHNGCRC9.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_E0LHNGCRC9.png)
 
 ## 1.６ 坐标变换
 
 ### 1.6.1 点的旋转
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_pr7nwD4i5Y.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_pr7nwD4i5Y.png)
 
 ### 1.6.2坐标系的旋转
 
@@ -189,11 +189,11 @@ $$
 
 #### 二维旋转矩阵
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_-dfn-rJy_F.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_-dfn-rJy_F.png)
 
 附：推导方法2
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_hY2rNsicfA.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_hY2rNsicfA.png)
 
 #### 三维旋转矩阵
 
@@ -242,7 +242,7 @@ $\boldsymbol R \boldsymbol R^T = \boldsymbol I \\
 {\boldsymbol R}^{-1} = {\boldsymbol R}^{T}\\
 |\det (\boldsymbol R)|=\boldsymbol 1, \text {where I is an identity matrix }$
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_OtMGP7-59M.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_OtMGP7-59M.png)
 
 # 2.成像几何 Imaging Geometry 重点
 
@@ -258,7 +258,7 @@ $\boldsymbol R \boldsymbol R^T = \boldsymbol I \\
 
 #### 世界坐标系 WCS（world coordinate system）
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_wIAW4mW03x.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_wIAW4mW03x.png)
 
 > 世界坐标系（world coordinate system）的原点可以放在任何地方，世界的尽头，宇宙的中心，曹县等等
 
@@ -266,11 +266,11 @@ $\boldsymbol R \boldsymbol R^T = \boldsymbol I \\
 
 > 相机坐标系（camera coordinate system）的原点通常放在光心（或相机中心）。
 
-![相机成像示意图](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_KeVdxYurOH.png "相机成像示意图")
+![相机成像示意图](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_KeVdxYurOH.png "相机成像示意图")
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_TySi0Cn0MN.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_TySi0Cn0MN.png)
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_RgvdHMWlnm.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_RgvdHMWlnm.png)
 
 *   Z 轴是光轴
 
@@ -278,37 +278,37 @@ $\boldsymbol R \boldsymbol R^T = \boldsymbol I \\
 
 #### 图像平面坐标系 IPCS（image coordinate system）
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_2fdfPaaEL0.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_2fdfPaaEL0.png)
 
 3维到2维。
 
 类似于小孔成像模型，（上图为了方便观察，把图像放在了光心前面，实际上成像应该在后面，如下图）
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_8gplbt9gsI.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_8gplbt9gsI.png)
 
 ### 像素坐标系 PCS（pixel coordinate system）
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_uyPWSVsGGu.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_uyPWSVsGGu.png)
 
 像素，可以理解为1 pixel=dx mm ，即相机成像可以表示的最小精度。
 
 像素坐标系和图像坐标系都是在图像平面上，区别在于原点和单位长度不一样。像素坐标系单位是 pixel ，图像坐标系 单位是mm.
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_qb8wamCyeK.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_qb8wamCyeK.png)
 
 ### 我们的目标：来去自如
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_nyH9Pb5eOV.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_nyH9Pb5eOV.png)
 
 前向：用一个数学模型来描述3D世界中的一个点在2D像素坐标系中的位置。
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_dvtTXjKo6U.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_dvtTXjKo6U.png)
 
 反向：通过一个点在像素坐标系的坐标，反推出这个点在3D真实世界中的位置&#x20;
 
 ## 2.2 CCS to IPCS (相机坐标系到图像坐标系的透视变换)
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_W4s-MCSZaO.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_W4s-MCSZaO.png)
 
 根据简单的相似三角形规则，就可以推出：
 
@@ -325,7 +325,7 @@ $$
 
 Note:$ (x,y) = (x,y,1)=(2x,2y,2)=(kx,ky,k)  $for 任意不为0的k
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_xYqVZrnbAB.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_xYqVZrnbAB.png)
 
 R.Fan的思路，放在引用页面了
 
@@ -333,7 +333,15 @@ R.Fan的思路，放在引用页面了
 
 ## 2.3 WCS to CCS (世界坐标系到相机坐标系，刚体变换，旋转+平移)
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_d4MaZo1R_M.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_d4MaZo1R_M.png)
+
+$$
+\bm P =
+\left\[\begin{array}
+{c | c}
+\bm R & \bm t \\\hline
+\bm 0^T & \b
+$$
 
 世界坐标系上的一个点$\boldsymbol {p_i^W} = [x_i^W,y_i^W,z_i^W]^T$转换到相机坐标系的一个点$\boldsymbol {p_i^C} = [x_i^C,y_i^C,z_i^C]^T$,通过以下变换 （**旋转+平移** ）
 
@@ -377,11 +385,11 @@ $$
 
 ## 2.4 IPCS to PCS（图像坐标系到像素坐标系，通过内参矩阵Intrinsic matrix）
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_h55aCcAAY9.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_h55aCcAAY9.png)
 
 > 图像坐标系的原点通常情况下是成像平面的中点，单位是mm，属于物理单位。而像素坐标系的单位是pixel，我们平常描述一个像素点都是几行几列。
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_huwG1YK91C.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_huwG1YK91C.png)
 
 *   内参矩阵$\boldsymbol K$(3 x 3 矩阵)常被用来联系图像平面坐标系$(x,y)$和像素坐标系$(u,v)$
 
@@ -396,7 +404,7 @@ $\boldsymbol p_o=[u_o,v_o]^T$是图像中心，$s_x,s_y$分别是pixels per mm�
 
 结合下面这个图更好理解，1pixel=dx mm，$s\_x = 1/dx$pixel/mm
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_WYUzCLYj1g.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_WYUzCLYj1g.png)
 
 我们现在得到了两个等式，
 $$
@@ -434,6 +442,14 @@ $$
 *   这里$\widetilde{\boldsymbol p}=[\boldsymbol p^T,1]^T=[u_i,v_i,1]^T$是$\boldsymbol p=[u_i,v_i]^T$的齐次坐标
 *   $u_o,v_o,f,s_x,s_y$是5个内参，有的课本会说$u_o,v_o,f_x,f_y$4个内参
 
+$$
+\bm K =
+\left\[\begin{array}
+{ccc}\
+f\_x & 0 & u\_o \\
+0 & f\_y & v\_o \
+$$
+
 定睛一看，这就是**相机坐标系到像素坐标系**的关系。可以写为：
 
 $$
@@ -455,7 +471,7 @@ $$
 
 ## 2.5是时候展现真正的技术了：从WCS世界坐标系到PCS像素坐标系的转换
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_NeJ-Oed0Q6.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_NeJ-Oed0Q6.png)
 
 由2.4知**相机坐标系到像素坐标系**的关系
 
@@ -479,17 +495,17 @@ $$
 
 # 扩展阅读
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_-vIhpjR4Jl.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_-vIhpjR4Jl.png)
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_3Wq722TJ5a.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_3Wq722TJ5a.png)
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_TZdF_WwX0_.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_TZdF_WwX0_.png)
 
 比如这张图，Rtrain 第一行，\[0 0 1] .意思是 camera x axis 是在世界坐标系的z axis 方向。其实第一行就是camera x axis 相对于世界坐标系 x,y,z axis 的方向余弦。
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_cqj1zKDVGX.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_cqj1zKDVGX.png)
 
-![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/image/image_5OWyI2_hVy.png)
+![](../../360Downloads/Software/IPMV-2022 (2) (2)/Lecture3_Perspective_Transform/https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/image/image_5OWyI2_hVy.png)
 
 # 总结
 
