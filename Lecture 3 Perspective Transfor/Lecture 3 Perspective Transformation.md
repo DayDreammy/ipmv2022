@@ -193,16 +193,6 @@ $$ \frac{\partial \boldsymbol{Y}}{\partial x}=\left[\begin{array}{c}\frac{\parti
 \frac{\partial y m 1}{\partial x}, \frac{\partial y m 2}{\partial x}, \ldots, \frac{\partial y m n}{\partial x}\end{array}\right] $$
 
 
-
-$$\frac{\partial \boldsymbol Y}{\partial x} =
-\left[\begin{array}
-{}
-\frac{\partial y_{11}}{\partial x} ,\frac{\partial y_{12}}{\partial x},...,\frac{\partial y_{1n}}{\partial x}\\
-\frac{\partial y_{21}}{\partial x} ,\frac{\partial y_{22}}{\partial x},...,\frac{\partial y_{2n}}{\partial x}\\
-......\\
-\frac{\partial y_{m1}}{\partial x} ,\frac{\partial y_{m2}}{\partial x},...,\frac{\partial y_{mn}}{\partial x}\\
-\end{array}
-\right] $$
 ![](image/image_xvHaMuphg-.png)
 
 ## 1.６ 坐标变换
@@ -371,19 +361,19 @@ R.Fan的思路，放在引用页面了
 世界坐标系上的一个点$\boldsymbol {p_i^W} = [x_i^W,y_i^W,z_i^W]^T$转换到相机坐标系的一个点$\boldsymbol {p_i^C} = [x_i^C,y_i^C,z_i^C]^T$,通过以下变换 （**旋转+平移** ）
 
 $$
-\boldsymbol p\_i^C = \boldsymbol R \boldsymbol p\_i^W + \boldsymbol t
+\boldsymbol p_i^C = \boldsymbol R \boldsymbol p_i^W + \boldsymbol t
 $$
 
 如果转换多次，则需要
 
 $$
-\boldsymbol p\_i^C =\boldsymbol R\_3( \boldsymbol R\_2(\boldsymbol R\_1 \boldsymbol p\_i^W + \boldsymbol t\_1) + \boldsymbol t\_2)+\boldsymbol t\_3  ...
+\boldsymbol p\_i^C =\boldsymbol R_3( \boldsymbol R_2(\boldsymbol R_1 \boldsymbol p_i^W + \boldsymbol t_1) + \boldsymbol t_2)+\boldsymbol t_3  ...
 $$
 
 这样运算起来不是很方便，所以引入齐次矩阵$\boldsymbol P$,$ \widetilde{\boldsymbol p}  $是$\boldsymbol p$的齐次坐标
 
 $$
-\widetilde{\boldsymbol p}\_i^C = \boldsymbol P \widetilde{\boldsymbol p}\_i^W
+\widetilde{\boldsymbol p}_i^C = \boldsymbol P \widetilde{\boldsymbol p}_i^W
 $$
 
 where
@@ -421,8 +411,8 @@ $$
 *   镜头畸变并不存在在透视的相机模型，所以图像坐标系和像素坐标系可以用以下公式转换
 
 $$
-u\_i=u\_o+s\_x x\_i\\
-v\_i=v\_o+s\_y y\_i\\
+u_i=u_o+s_x x_i\\
+v_i=v_o+s_y y_i\\
 $$
 
 $\boldsymbol p_o=[u_o,v_o]^T$是图像中心，$s_x,s_y$分别是pixels per mm，
@@ -434,11 +424,11 @@ $\boldsymbol p_o=[u_o,v_o]^T$是图像中心，$s_x,s_y$分别是pixels per mm�
 我们现在得到了两个等式，
 
 $$
-u\_i=u\_o+s\_x x\_i\text{ and, }v\_i=v\_o+s\_y y\_i  \\
+u_i=u_o+s_x x_i\text{ and, }v_i=v_o+s_y y_i  \\
 $$
 
 $$
-x\_i=f \frac{x\_i^C}{Z\_i^C}\text{ and, }y\_i=f \frac{y\_i^C}{Z\_i^C}\\
+x_i=f \frac{x_i^C}{Z_i^C}\text{ and, }y_i=f \frac{y_i^C}{Z_i^C}\\
 $$
 
 联立这两个等式，我们得到，
