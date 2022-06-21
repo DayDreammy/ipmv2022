@@ -148,7 +148,7 @@ $ y=y_1,y_2,...,y_m]^T  $and x is a scalar.
 
 *   Scalar-by-vector:$\frac{\partial x}{\partial \boldsymbol y} =[\frac{\partial x}{\partial y_1},\frac{\partial x}{\partial y_2},,...,\frac{\partial x}{\partial y_m}]^T$
 
-$y=\[y_1,y_2,...,y_m]^T$and $x=[x_1,x_2,...,x_m]^T$
+$y=[y_1,y_2,...,y_m]^T$and $x=[x_1,x_2,...,x_m]^T$
 
 *   Vector-by-Vector:
 
@@ -166,7 +166,7 @@ $$
 
 #### 矩阵求导
 
-**Y**  = $\left[\begin{array}
+$\boldsymbol Y = \left[\begin{array}
 {ccc}
 y_{11} & y_{11} & ...&  y_{1n}\\
 y_{21} & y_{22} & ...&  y_{2n}\\
@@ -410,7 +410,7 @@ u\_i=u\_o+s\_x x\_i\\
 v\_i=v\_o+s\_y y\_i\\
 $$
 
-$\boldsymbol p_o=\[u_o,v_o]^T$是图像中心，$s_x,s_y$分别是pixels per mm，
+$\boldsymbol p_o=[u_o,v_o]^T$是图像中心，$s_x,s_y$分别是pixels per mm，
 
 结合下面这个图更好理解，1pixel=dx mm，$s_x = 1/dx$pixel/mm
 
