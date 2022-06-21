@@ -90,8 +90,10 @@
 
 ## 1.1 向量点乘 dot pruduct
 
+
+
 $$
-\boldsymbol a · \boldsymbol b \\=a\_1b\_1 + a\_2b\_2+a\_3b\_3 \\= ||\boldsymbol a||\_2||\boldsymbol b||\_2cos\theta\\=\sqrt{\boldsymbol a·\boldsymbol a}\sqrt{\boldsymbol b·\boldsymbol b}\cos \theta \\=\sqrt{\boldsymbol a^T \boldsymbol a}\sqrt{\boldsymbol b^T \boldsymbol b}\cos \theta
+\boldsymbol a · \boldsymbol b =a\_1b\_1 + a\_2b\_2+a\_3b\_3 = ||\boldsymbol a||\_2||\boldsymbol b||\_2cos\theta=\sqrt{\boldsymbol a·\boldsymbol a}\sqrt{\boldsymbol b·\boldsymbol b}\cos \theta =\sqrt{\boldsymbol a^T \boldsymbol a}\sqrt{\boldsymbol b^T \boldsymbol b}\cos \theta
 $$
 
 ![](image/image_fMZ5gLiog5.png)
@@ -100,13 +102,19 @@ $$
 
 When $\boldsymbol a \in  \mathbb{R}^{n \times 1}$，
 
-*   1-范数：向量元素绝对值之和 $||\boldsymbol a||*1=\sum*{k=1}^{n}|a_k|$;
+1-范数：向量元素绝对值之和$\lVert \boldsymbol a\rVert =\sum\nolimits_{k=1}^{n}   \lvert a_k\rvert$;
 
-*   2-范数（欧几里得范数，常用计算向量长度）：向量元素绝对值的平方和再开方，$||\boldsymbol a||*2=\sqrt{\sum*{k=1}^{n}|a_k|^2}$;
+2-范数（欧几里得范数，常用计算向量长度）：向量元素绝对值的平方和再开方，$\lVert\boldsymbol a\rVert_2=\sqrt{\sum\nolimits_{k=1}^{n}  \lvert a_k\rvert^2}$;
 
-*   p-范数：向量元素绝对值的p次方和的1/p次幂 $||\boldsymbol a||*p=(\sum*{k=1}^{n}|a_k|^p)^{1/p}$
+p-范数：向量元素绝对值的p次方和的1/p次幂 
+$ \lVert\boldsymbol a\rVert_p=(\sum\nolimits_{k=1}^{n}  \lvert a_k\rvert^p)^{1/p} $
 
-    *   无穷范数 $\left||\boldsymbol a \right|| *\infin=\max\limits* i |a_i|.\text{特别的，}\left||\boldsymbol a \right|| *{+\infin}=\max\limits* i |a_i|,\left||\boldsymbol a \right|| *{-\infin}=\min\limits* i |a_i|$
+无穷范数 :
+
+$ \lVert\boldsymbol a\rVert_{\infty}  = \max_i  \lvert a_i\rvert$ 特别的，
+$\lVert\boldsymbol a\rVert_{+\infty}  = \max_i  \lvert a_i\rvert$ ，$\lVert\boldsymbol a\rVert_{-\infty}  = \min_i  \lvert a_i\rvert$
+
+
 
 参考：
 
@@ -142,11 +150,11 @@ $$
 
 #### 向量求导
 
-$ y=y_1,y_2,...,y_m]^T  $and x is a scalar.
+$y=[y_1,y_2,...,y_m]^T$ and x is a scalar.
 
-*   Vector-by-scalar:$\frac{\partial \boldsymbol y}{\partial x} =[\frac{\partial y_1}{\partial x},\frac{\partial y_2}{\partial x},,...,\frac{\partial y_m}{\partial x}]^T$
+*   Vector-by-scalar:$\frac{\partial \boldsymbol y}{\partial x} =[\frac{\partial y_1}{\partial x},\frac{\partial y_2}{\partial x},...,\frac{\partial y_m}{\partial x}]^T$
 
-*   Scalar-by-vector:$\frac{\partial x}{\partial \boldsymbol y} =[\frac{\partial x}{\partial y_1},\frac{\partial x}{\partial y_2},,...,\frac{\partial x}{\partial y_m}]^T$
+*   Scalar-by-vector:$\frac{\partial x}{\partial \boldsymbol y} =[\frac{\partial x}{\partial y_1},\frac{\partial x}{\partial y_2},...,\frac{\partial x}{\partial y_m}]^T$
 
 $y=[y_1,y_2,...,y_m]^T$and $x=[x_1,x_2,...,x_m]^T$
 
@@ -155,39 +163,46 @@ $y=[y_1,y_2,...,y_m]^T$and $x=[x_1,x_2,...,x_m]^T$
 $$
 \left[\begin{array}
 {ccc}
-\frac{\partial y\_1}{\partial x\_1} ,\frac{\partial y\_1}{\partial x\_2},...,\frac{\partial y\_1}{\partial x\_n}\\
-\frac{\partial y\_2}{\partial x\_1} ,\frac{\partial y\_2}{\partial x\_2},...,\frac{\partial y\_2}{\partial x\_n}\\
+\frac{\partial y_1}{\partial x_1} ,\frac{\partial y_1}{\partial x_2},...,\frac{\partial y_1}{\partial x_n}\\
+\frac{\partial y_2}{\partial x_1} ,\frac{\partial y_2}{\partial x_2},...,\frac{\partial y_2}{\partial x_n}\\
 ......\\
-\frac{\partial y\_m}{\partial x\_1} ,\frac{\partial y\_m}{\partial x\_2},...,\frac{\partial y\_m}{\partial x\_n}\\
-
+\frac{\partial y_m}{\partial x_1} ,\frac{\partial y_m}{\partial x_2},...,\frac{\partial y_m}{\partial x_n}\\
 \end{array}
-\right]
+\right] 
 $$
 
 #### 矩阵求导
 
-$\boldsymbol Y = \left[\begin{array}
-{ccc}
-y_{11} & y_{11} & ...&  y_{1n}\\
+$$ \mathbf{Y}=\left[\begin{array}{cccc}y_{11} & y_{12} & \cdots & y_{1 n} \\
+y_{21} & y_{22} & \cdots & y_{2 n} \\
+\cdots & \cdots & \cdots & \cdots \\
+y_{m 1} & y_{m 2} & \cdots & y_{m n}\end{array}\right] $$  is an mxn matrix.
+
+$
+\boldsymbol Y=\left[\begin{array}
+{}
+y_{11} & y_{12} & ...&  y_{1n}\\
 y_{21} & y_{22} & ...&  y_{2n}\\
 ... & ...& ...&... \\
 y_{m1} & y_{m2} & ...&  y_{mn}\\
-\end{array}
-\right]$ is an mxn matrix.
+\end{array}\right]$ is an mxn matrix.
 
 Matrix-by-scalar: x is a scalar ,so 
-$$
-\frac{\partial \boldsymbol Y}{\partial x} =
-\left[\begin{array}
-{ccc}
-\frac{\partial y\_{11}}{\partial x} ,\frac{\partial y\_{12}}{\partial x},...,\frac{\partial y\_{1n}}{\partial x}\\
-\frac{\partial y\_{21}}{\partial x} ,\frac{\partial y\_{22}}{\partial x},...,\frac{\partial y\_{2n}}{\partial x}\\
-......\\
-\frac{\partial y\_{m1}}{\partial x} ,\frac{\partial y\_{m2}}{\partial x},...,\frac{\partial y\_{mn}}{\partial x}\\
 
+$$ \frac{\partial \boldsymbol{Y}}{\partial x}=\left[\begin{array}{c}\frac{\partial y 11}{\partial x}, \frac{\partial y 12}{\partial x}, \ldots, \frac{\partial y 1 n}{\partial x} \\ \frac{\partial y 21}{\partial x}, \frac{\partial y 22}{\partial x}, \ldots, \frac{\partial y 2 n}{\partial x} \\
+\frac{\partial y m 1}{\partial x}, \frac{\partial y m 2}{\partial x}, \ldots, \frac{\partial y m n}{\partial x}\end{array}\right] $$
+
+
+
+$$\frac{\partial \boldsymbol Y}{\partial x} =
+\left[\begin{array}
+{}
+\frac{\partial y_{11}}{\partial x} ,\frac{\partial y_{12}}{\partial x},...,\frac{\partial y_{1n}}{\partial x}\\
+\frac{\partial y_{21}}{\partial x} ,\frac{\partial y_{22}}{\partial x},...,\frac{\partial y_{2n}}{\partial x}\\
+......\\
+\frac{\partial y_{m1}}{\partial x} ,\frac{\partial y_{m2}}{\partial x},...,\frac{\partial y_{mn}}{\partial x}\\
 \end{array}
-\right]
-$$
+\right] $$
 ![](image/image_xvHaMuphg-.png)
 
 ## 1.６ 坐标变换
