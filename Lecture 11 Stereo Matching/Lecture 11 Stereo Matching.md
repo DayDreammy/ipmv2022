@@ -1,3 +1,4 @@
+\usepackage{bm}
 # Lecture 11 Stereo Matching
 
 ## 目录
