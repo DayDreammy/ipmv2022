@@ -32,7 +32,7 @@
 
             *   [三维旋转矩阵](#三维旋转矩阵)
 
-*   [2.成像几何 Imaging Geometry 重点](#2成像几何-imaging-geometry-重点)
+* [2.成像几何 Imaging Geometry 重点](#2成像几何-imaging-geometry-重点)
 
     *   [2.1 四个坐标系](#21-四个坐标系)
 
@@ -50,23 +50,7 @@
 
     *   [2.3 WCS to CCS (世界坐标系到相机坐标系，刚体变换，旋转+平移)](#23-wcs-to-ccs-世界坐标系到相机坐标系刚体变换旋转平移)
 
-*   [\$\$
-    \bm P =
-    \left\[\begin{array}
-    {c | c}
-    \bm R & \bm t \\\hline
-    \bm 0^T & \bm 1\\
-    \end{array}
-    \right\]](#bm-p-leftbeginarrayc--cbm-r--bm-t-hlinebm-0t--bm-1endarrayright)
-
     *   [2.4 IPCS to PCS（图像坐标系到像素坐标系，通过内参矩阵Intrinsic matrix）](#24-ipcs-to-pcs图像坐标系到像素坐标系通过内参矩阵intrinsic-matrix)
-
-*   [\$\$
-    \left\[\begin{array}
-    {ccc}
-    u\_i\v\_i\1
-    \end{array}
-    \right\]](#leftbeginarraycccu_iv_i1endarrayright)
 
     *   [2.5是时候展现真正的技术了：从WCS世界坐标系到PCS像素坐标系的转换](#25是时候展现真正的技术了从wcs世界坐标系到pcs像素坐标系的转换)
 
@@ -116,13 +100,13 @@ $$
 
 When $\boldsymbol a \in  \mathbb{R}^{n \times 1}$，
 
-*   1-范数：向量元素绝对值之和 $||\boldsymbol a||*1=\sum*{k=1}^{n}|a\_k|$;
+*   1-范数：向量元素绝对值之和 $||\boldsymbol a||*1=\sum*{k=1}^{n}|a_k|$;
 
-*   2-范数（欧几里得范数，常用计算向量长度）：向量元素绝对值的平方和再开方，$||\boldsymbol a||*2=\sqrt{\sum*{k=1}^{n}|a\_k|^2}$;
+*   2-范数（欧几里得范数，常用计算向量长度）：向量元素绝对值的平方和再开方，$||\boldsymbol a||*2=\sqrt{\sum*{k=1}^{n}|a_k|^2}$;
 
-*   p-范数：向量元素绝对值的p次方和的1/p次幂 $||\boldsymbol a||*p=(\sum*{k=1}^{n}|a\_k|^p)^{1/p}$
+*   p-范数：向量元素绝对值的p次方和的1/p次幂 $||\boldsymbol a||*p=(\sum*{k=1}^{n}|a_k|^p)^{1/p}$
 
-    *   无穷范数 $\left||\bm a \right|| *\infin=\max\limits* i |a\_i|.\text{特别的，}\left||\bm a \right|| *{+\infin}=\max\limits* i |a\_i|,\left||\bm a \right|| *{-\infin}=\min\limits* i |a\_i|$
+    *   无穷范数 $\left||\boldsymbol a \right|| *\infin=\max\limits* i |a_i|.\text{特别的，}\left||\boldsymbol a \right|| *{+\infin}=\max\limits* i |a_i|,\left||\boldsymbol a \right|| *{-\infin}=\min\limits* i |a_i|$
 
 参考：
 
@@ -134,7 +118,7 @@ When $\boldsymbol a \in  \mathbb{R}^{n \times 1}$，
 
 $$
 \boldsymbol a \times \boldsymbol b \\
-\=|| \bm a||\_2|| \bm b||\_2\sin(\theta)\bm n
+=|| \boldsymbol a||\_2|| \boldsymbol b||\_2\sin(\theta)\boldsymbol n
 $$
 
 ![](image/image_TVvZ0F5s8K.png)
@@ -144,13 +128,12 @@ $$
 ![](image/image_Ng3Qjt2e6Z.png)
 
 $$
-
-\[a]\_x=\left\[
+[a]_x=\left[
 \begin{array}
 {ccc}
 0 & -a\_3 & a\_2\\
 a\_3 & 0 & -a\_1\\
-\-a\_2 & a\_1 & 0\\
+-a\_2 & a\_1 & 0\\
 \end{array}
 \right]
 $$
@@ -159,19 +142,18 @@ $$
 
 #### 向量求导
 
-$ y=\[y\_1,y\_2,...,y\_m]^T  $and x is a scalar.
+$ y=y_1,y_2,...,y_m]^T  $and x is a scalar.
 
-*   Vector-by-scalar:$\frac{\partial \bm y}{\partial x} =\[\frac{\partial y\_1}{\partial x},\frac{\partial y\_2}{\partial x},,...,\frac{\partial y\_m}{\partial x}]^T$
+*   Vector-by-scalar:$\frac{\partial \boldsymbol y}{\partial x} =[\frac{\partial y_1}{\partial x},\frac{\partial y_2}{\partial x},,...,\frac{\partial y_m}{\partial x}]^T$
 
-*   Scalar-by-vector:$\frac{\partial x}{\partial \bm y} =\[\frac{\partial x}{\partial y\_1},\frac{\partial x}{\partial y\_2},,...,\frac{\partial x}{\partial y\_m}]^T$
+*   Scalar-by-vector:$\frac{\partial x}{\partial \boldsymbol y} =[\frac{\partial x}{\partial y_1},\frac{\partial x}{\partial y_2},,...,\frac{\partial x}{\partial y_m}]^T$
 
-$y=\[y\_1,y\_2,...,y\_m]^T$and $x=\[x\_1,x\_2,...,x\_m]^T$
+$y=\[y_1,y_2,...,y_m]^T$and $x=[x_1,x_2,...,x_m]^T$
 
 *   Vector-by-Vector:
 
 $$
-
-\left\[\begin{array}
+\left[\begin{array}
 {ccc}
 \frac{\partial y\_1}{\partial x\_1} ,\frac{\partial y\_1}{\partial x\_2},...,\frac{\partial y\_1}{\partial x\_n}\\
 \frac{\partial y\_2}{\partial x\_1} ,\frac{\partial y\_2}{\partial x\_2},...,\frac{\partial y\_2}{\partial x\_n}\\
@@ -184,18 +166,19 @@ $$
 
 #### 矩阵求导
 
-**Y**  = $\left\[\begin{array}
+**Y**  = $\left[\begin{array}
 {ccc}
-y\_{11} & y\_{11} & ...&  y\_{1n}\\
-y\_{21} & y\_{22} & ...&  y\_{2n}\\
+y_{11} & y_{11} & ...&  y_{1n}\\
+y_{21} & y_{22} & ...&  y_{2n}\\
 ... & ...& ...&... \\
-y\_{m1} & y\_{m2} & ...&  y\_{mn}\\
+y_{m1} & y_{m2} & ...&  y_{mn}\\
 \end{array}
 \right]$ is an mxn matrix.
 
-Matrix-by-scalar: x is a scalar ,so \$
-\frac{\partial \bm Y}{\partial x} =
-\left\[\begin{array}
+Matrix-by-scalar: x is a scalar ,so 
+$$
+\frac{\partial \boldsymbol Y}{\partial x} =
+\left[\begin{array}
 {ccc}
 \frac{\partial y\_{11}}{\partial x} ,\frac{\partial y\_{12}}{\partial x},...,\frac{\partial y\_{1n}}{\partial x}\\
 \frac{\partial y\_{21}}{\partial x} ,\frac{\partial y\_{22}}{\partial x},...,\frac{\partial y\_{2n}}{\partial x}\\
@@ -203,8 +186,8 @@ Matrix-by-scalar: x is a scalar ,so \$
 \frac{\partial y\_{m1}}{\partial x} ,\frac{\partial y\_{m2}}{\partial x},...,\frac{\partial y\_{mn}}{\partial x}\\
 
 \end{array}
-\right]  \$
-
+\right]
+$$
 ![](image/image_xvHaMuphg-.png)
 
 ## 1.６ 坐标变换
@@ -232,7 +215,7 @@ Matrix-by-scalar: x is a scalar ,so \$
 *   绕x轴旋转
 
 $$
-R\_x(\theta)=\left\[\begin{array}
+R\_x(\theta)=\left[\begin{array}
 {ccc}
 1 & 0 & 0\\
 0 & cos\theta & -sin\theta\\
@@ -245,11 +228,11 @@ $$
 *   绕y轴旋转
 
 $$
-R\_y(\theta)=\left\[\begin{array}
+R\_y(\theta)=\left[\begin{array}
 {ccc}
 cos\theta & 0 & sin\theta\\
 0 & 1 & 0\\
-\-sin\theta & 0 & cos\theta\\
+-sin\theta & 0 & cos\theta\\
 
 \end{array}
 \right]
@@ -258,7 +241,7 @@ $$
 *   绕z轴旋转
 
 $$
-R\_z(\theta)=\left\[\begin{array}
+R\_z(\theta)=\left[\begin{array}
 {ccc}
 cos\theta & -sin\theta & 0\\
 sin\theta &　cos\theta & 0\\
@@ -272,10 +255,10 @@ $$
 
 > 三维正交阵
 
-$\bm R \bm R^T = \bm I \\
-\bm R^T \bm R  = \bm I \\
-{\bm R}^{-1} = {\bm R}^{T}\\
-|\det (\bm R)|=\bm 1, \text {where I is an identity matrix }$
+$\boldsymbol R \boldsymbol R^T = \boldsymbol I \\
+\boldsymbol R^T \boldsymbol R  = \boldsymbol I \\
+{\boldsymbol R}^{-1} = {\boldsymbol R}^{T}\\
+|\det (\boldsymbol R)|=\boldsymbol 1, \text {where I is an identity matrix }$
 
 ![](image/image_a0t9rTkwgJ.png)
 
@@ -370,41 +353,41 @@ R.Fan的思路，放在引用页面了
 
 ![](image/image_r8ZlItKK2v.png)
 
-世界坐标系上的一个点$\bm {p\_i^W} = \[x\_i^W,y\_i^W,z\_i^W]^T$转换到相机坐标系的一个点$\bm {p\_i^C} = \[x\_i^C,y\_i^C,z\_i^C]^T$,通过以下变换 （**旋转+平移** ）
+世界坐标系上的一个点$\boldsymbol {p_i^W} = [x_i^W,y_i^W,z_i^W]^T$转换到相机坐标系的一个点$\boldsymbol {p_i^C} = [x_i^C,y_i^C,z_i^C]^T$,通过以下变换 （**旋转+平移** ）
 
 $$
-\bm p\_i^C = \bm R \bm p\_i^W + \bm t
+\boldsymbol p\_i^C = \boldsymbol R \boldsymbol p\_i^W + \boldsymbol t
 $$
 
 如果转换多次，则需要
 
 $$
-\bm p\_i^C =\bm R\_3( \bm R\_2(\bm R\_1 \bm p\_i^W + \bm t\_1) + \bm t\_2)+\bm t\_3  ...
+\boldsymbol p\_i^C =\boldsymbol R\_3( \boldsymbol R\_2(\boldsymbol R\_1 \boldsymbol p\_i^W + \boldsymbol t\_1) + \boldsymbol t\_2)+\boldsymbol t\_3  ...
 $$
 
-这样运算起来不是很方便，所以引入齐次矩阵$\bm P$,$ \widetilde{\bm p}  $是$\bm p$的齐次坐标
+这样运算起来不是很方便，所以引入齐次矩阵$\boldsymbol P$,$ \widetilde{\boldsymbol p}  $是$\boldsymbol p$的齐次坐标
 
 $$
-\widetilde{\bm p}\_i^C = \bm P \widetilde{\bm p}\_i^W
+\widetilde{\boldsymbol p}\_i^C = \boldsymbol P \widetilde{\boldsymbol p}\_i^W
 $$
 
 where
 
 $$
-\bm P =
-\left\[\begin{array}
+\boldsymbol P =
+\left[\begin{array}
 {c | c}
-\bm R & \bm t \\\hline
-\bm 0^T & \bm 1\\
+\boldsymbol R & \boldsymbol t \\\hline
+\boldsymbol 0^T & \boldsymbol 1\\
 \end{array}
 \right]
-=======
+=
 
-\left\[\begin{array}
+\left[\begin{array}
 {ccc|c}
-r\_{11} & r\_{12} & r\_{13} & t\_x\\
-r\_{21} & r\_{22} & r\_{23} & t\_y\\
-r\_{31} & r\_{32} & r\_{33} & t\_z\\\hline
+r_{11} & r_{12} & r_{13} & t_x\\
+r_{21} & r_{22} & r_{23} & t_y\\
+r_{31} & r_{32} & r_{33} & t_z\\\hline
 0      & 0      & 0      & 1\\
 \end{array}
 \right]
@@ -418,7 +401,7 @@ $$
 
 ![](image/image_2GJVM_MbiJ.png)
 
-*   内参矩阵$\bm K$(3 x 3 矩阵)常被用来联系图像平面坐标系$(x,y)$和像素坐标系$(u,v)$
+*   内参矩阵$\boldsymbol K$(3 x 3 矩阵)常被用来联系图像平面坐标系$(x,y)$和像素坐标系$(u,v)$
 
 *   镜头畸变并不存在在透视的相机模型，所以图像坐标系和像素坐标系可以用以下公式转换
 
@@ -427,9 +410,9 @@ u\_i=u\_o+s\_x x\_i\\
 v\_i=v\_o+s\_y y\_i\\
 $$
 
-$\bm p\_o=\[u\_o,v\_o]^T$是图像中心，$s\_x,s\_y$分别是pixels per mm，
+$\boldsymbol p_o=\[u_o,v_o]^T$是图像中心，$s_x,s_y$分别是pixels per mm，
 
-结合下面这个图更好理解，1pixel=dx mm，$s\_x = 1/dx$pixel/mm
+结合下面这个图更好理解，1pixel=dx mm，$s_x = 1/dx$pixel/mm
 
 ![](image/image_3OJYdi_j4j.png)
 
@@ -446,47 +429,44 @@ $$
 联立这两个等式，我们得到，
 
 $$
-\left\[\begin{array}
-{ccc}
-u\_i\v\_i\1
-\end{array}
-\right]
-=======
-
-\frac{1}{z\_i^C}
-\left\[\begin{array}
-{ccc}\
-f\_x & 0 & u\_o \\
-0 & f\_y & v\_o \\
+\left[\begin{array}
+{ccc} 
+u_i\\v_i\\1
+\end{array} 
+\right] 
+=
+\frac{1}{z_i^C} 
+\left[\begin{array}
+{ccc}  
+f_x & 0 & u_o \\
+0 & f_y & v_o \\
 0 & 0   & 1   \\
-\end{array}
-\right]\
-\left\[\begin{array}
-{ccc}
-x\_i^C\y\_i^C\z\_i^C
-\end{array}
-\right]
-
+\end{array} 
+\right]  
+\left[\begin{array}
+{ccc} 
+x_i^C\\y_i^C\\z_i^C
+\end{array} 
+\right] 
 $$
 
-*   这里$\widetilde{\bm p}=\[\bm p^T,1]^T=\[u\_i,v\_i,1]^T$是$\bm p=\[u\_i,v\_i]^T$的齐次坐标
-
-*   $u\_o,v\_o,f,s\_x,s\_y$是5个内参，有的课本会说$u\_o,v\_o,f\_x,f\_y$4个内参
+*   这里$\widetilde{\boldsymbol p}=[\boldsymbol p^T,1]^T=[u_i,v_i,1]^T$是$\boldsymbol p=[u_i,v_i]^T$的齐次坐标
+*   $u_o,v_o,f,s_x,s_y$是5个内参，有的课本会说$u_o,v_o,f_x,f_y$4个内参
 
 定睛一看，这就是**相机坐标系到像素坐标系**的关系。可以写为：
 
 $$
-\widetilde{\bm p} = \frac {1}{z\_i^C}\bm K \bm p^C
+\widetilde{\boldsymbol p} = \frac {1}{z_i^C}\boldsymbol K \boldsymbol p^C
 $$
 
-$\bm K$是内参矩阵：
+$\boldsymbol K$是内参矩阵：
 
 $$
-\bm K =
-\left\[\begin{array}
+\boldsymbol K =
+\left[\begin{array}
 {ccc}\
-f\_x & 0 & u\_o \\
-0 & f\_y & v\_o \\
+f_x & 0 & u_o \\
+0 & f_y & v_o \\
 0 & 0   & 1   \\
 \end{array}
 \right]\
@@ -499,19 +479,19 @@ $$
 由2.4知**相机坐标系到像素坐标系**的关系
 
 $$
-\widetilde{\bm p} = \frac {1}{z\_i^C}\bm K \bm p^C
+\widetilde{\boldsymbol p} = \frac {1}{z_i^C}\boldsymbol K \boldsymbol p^C
 $$
 
 考虑**世界坐标系到相机坐标系**的关系
 
 $$
-\bm p\_i^C = \bm R \bm p\_i^W + \bm t
+\boldsymbol p_i^C = \boldsymbol R \boldsymbol p_i^W + \boldsymbol t
 $$
 
 我们可以很容易得出世界坐标系和像素坐标系的关系
 
 $$
-\bm p\_i^W=\bm R^{-1}(\bm K^{-1}\bm z\_i^C\widetilde{\bm p} - \bm t)
+\boldsymbol p_i^W=\boldsymbol R^{-1}(\boldsymbol K^{-1}\boldsymbol z_i^C\widetilde{\boldsymbol p} - \boldsymbol t)
 $$
 
 感觉还挺nb的，不是吗？3D坐标和像素坐标随便换。哎，就是玩！
@@ -544,10 +524,3 @@ $$
 
     3.
 
-\left\[\begin{array}
-{ccc} &#x20;
-f\_x & 0 & u\_o \\\\
-0 & f\_y & v\_o \\\\
-0 & 0   & 1   \\\\
-\end{array}&#x20;
-\right] &#x20;
