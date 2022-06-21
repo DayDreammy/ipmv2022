@@ -173,16 +173,6 @@ $$
 
 #### 矩阵求导
 
-$$ \mathbf{Y}=\left[\begin{array}{cccc}y_{11} & y_{12} & \cdots & y_{1 n} \\
-y_{21} & y_{22} & \cdots & y_{2 n} \\
-\cdots & \cdots & \cdots & \cdots \\
-y_{m 1} & y_{m 2} & \cdots & y_{m n}\end{array}\right] $$  is an mxn matrix.
-
-Matrix-by-scalar: x is a scalar ,so 
-
-$$ \frac{\partial \boldsymbol{Y}}{\partial x}=\left[\begin{array}{c}\frac{\partial y 11}{\partial x}, \frac{\partial y 12}{\partial x}, \ldots, \frac{\partial y 1 n}{\partial x} \\ \frac{\partial y 21}{\partial x}, \frac{\partial y 22}{\partial x}, \ldots, \frac{\partial y 2 n}{\partial x} \\
-\frac{\partial y m 1}{\partial x}, \frac{\partial y m 2}{\partial x}, \ldots, \frac{\partial y m n}{\partial x}\end{array}\right] $$
-
 
 ![](image/image_xvHaMuphg-.png)
 
