@@ -1,6 +1,6 @@
-# IPMV-2022
+# **Image Processing & Machine Vision** 2022
 
-**Image Processing & Machine Vision** &#x20;
+&#x20;IPMV-2022
 
 Lecturer: [Rui Fan](https://www.ruirangerfan.com/ "Rui Fan")
 
@@ -12,42 +12,41 @@ Teaching Support Assistants: Yi Feng & Shuai Su
 
 author：Yi Yang & Zhengpu Wang
 
-![](image/image_TuXz747nDc.png)
+![](image/image_OuBkkVbc8X.png)
 
-![](image/image_DGBShlJ3K6.png)
+![](image/image_SIlk1hcaEP.png)
 
 ***
 
-
-[HW--Stereo Camera](<HW--Stereo Camera/HW--Stereo Camera.md> "HW--Stereo Camera")
+[HW--StereoCamera](HW--StereoCamera/HW--StereoCamera.md "HW--StereoCamera")
 
 [Summary](Summary/Summary.md "Summary")
 
-[Lecture 14 IPMV with Deep Learning](<Lecture 14 IPMV with Deep Lear/Lecture 14 IPMV with Deep Learning.md> "Lecture 14 IPMV with Deep Learning")
+[Lecture14\_IPMV\_with\_Deep\_Learning](Lecture14_IPMV_with_Deep_Learn/Lecture14_IPMV_with_Deep_Learning.md "Lecture14_IPMV_with_Deep_Learning")
 
-[Lecture 13 Sfm and SLAM ](<Lecture 13 Sfm and SLAM/Lecture 13 Sfm and SLAM.md> "Lecture 13 Sfm and SLAM ")
+[Lecture13\_Sfm\_and\_SLAM ](Lecture13_Sfm_and_SLAM/Lecture13_Sfm_and_SLAM.md "Lecture13_Sfm_and_SLAM ")
 
-[Lecture 12 Motion 光流](<Lecture 12 Motion 光流/Lecture 12 Motion 光流.md> "Lecture 12 Motion 光流")
+[Lecture12\_Motion\_光流](Lecture12_Motion_光流/Lecture12_Motion_光流.md "Lecture12_Motion_光流")
 
-[Lecture 11 Stereo Matching](<Lecture 11 Stereo Matching/Lecture 11 Stereo Matching.md> "Lecture 11 Stereo Matching")
+[Lecture11\_Stereo\_Matching](Lecture11_Stereo_Matching/Lecture11_Stereo_Matching.md "Lecture11_Stereo_Matching")
 
-[Lecture 10 Interest Points](<Lecture 10 Interest Points/Lecture 10 Interest Points.md> "Lecture 10 Interest Points")
+[Lecture10\_Interest\_Points](Lecture10_Interest_Points/Lecture10_Interest_Points.md "Lecture10_Interest_Points")
 
-[Lecture 9 Edges & Lines](<Lecture 9 Edges & Lines/Lecture 9 Edges & Lines.md> "Lecture 9 Edges & Lines")
+[Lecture9\_Edges\_&\_Lines](Lecture9_Edges_&_Lines/Lecture9_Edges_&_Lines.md "Lecture9_Edges_&_Lines")
 
-[Lecture 8 Image Pyramid 图像金字塔](<Lecture 8 Image Pyramid 图像金字塔/Lecture 8 Image Pyramid 图像金字塔.md> "Lecture 8 Image Pyramid 图像金字塔")
+[Lecture8\_Image\_Pyramid\_图像金字塔](Lecture8_Image_Pyramid_图像金字塔/Lecture8_Image_Pyramid_图像金字塔.md "Lecture8_Image_Pyramid_图像金字塔")
 
-[Lecture 7 Image Filtering](<Lecture 7 Image Filtering/Lecture 7 Image Filtering.md> "Lecture 7 Image Filtering")
+[Lecture7\_Image\_Filtering](Lecture7_Image_Filtering/Lecture7_Image_Filtering.md "Lecture7_Image_Filtering")
 
-[Lecture 6 Epipolar Geometry（II)  对极几何](<Lecture 6 Epipolar Geometry（II/Lecture 6 Epipolar Geometry（II)  对极几何.md> "Lecture 6 Epipolar Geometry（II)  对极几何")
+[Lecture6\_Epipolar\_Geometry\_(II)\_ 对极几何](Lecture6_Epipolar_Geometry_\(II/Lecture6_Epipolar_Geometry_\(II\)_对极几何.md "Lecture6_Epipolar_Geometry_(II)_对极几何")
 
-[Lecture 5 Epipolar Geometry（I)  对极几何](<Lecture 5 Epipolar Geometry（I)/Lecture 5 Epipolar Geometry（I)  对极几何.md> "Lecture 5 Epipolar Geometry（I)  对极几何")
+[Lecture5\_Epipolar\_Geometry\_(I)\_ 对极几何](Lecture5_Epipolar_Geometry_\(I\)/Lecture5_Epipolar_Geometry_\(I\)_对极几何.md "Lecture5_Epipolar_Geometry_(I)_对极几何")
 
-[Lecture 4 Camera Calibration](<Lecture 4 Camera Calibration/Lecture 4 Camera Calibration.md> "Lecture 4 Camera Calibration")
+[Lecture4\_Camera\_Calibration](Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.md "Lecture4_Camera_Calibration")
 
-[Lecture 3 Perspective Transformation](<Lecture 3 Perspective Transfor/Lecture 3 Perspective Transformation.md> "Lecture 3 Perspective Transformation")
+[Lecture3\_Perspective\_Transformation](Lecture3_Perspective_Transform/Lecture3_Perspective_Transformation.md "Lecture3_Perspective_Transformation")
 
-[Lecture 2 Human Visual Perception,Cameras, & Images](<Lecture 2 Human Visual Percept/Lecture 2 Human Visual Perception,Cameras, & Image.md> "Lecture 2 Human Visual Perception,Cameras, & Images")
+[Lecture2\_Human\_Visual\_Perception,Cameras\_&\_Images](Lecture2_Human_Visual_Percepti/Lecture2_Human_Visual_Perception,Cameras_&_Images.md "Lecture2_Human_Visual_Perception,Cameras_&_Images")
 
 参考资料：
 

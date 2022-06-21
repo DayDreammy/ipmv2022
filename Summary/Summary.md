@@ -2,7 +2,7 @@
 
 author：Yi Yang & Zhengpu Wang
 
-![](image/image_Za3Bn3QTH3.png)
+![](image/image_xu_8rSGobm.png)
 
 时间：%DATE% %TIME%
 
@@ -34,9 +34,9 @@ author：Yi Yang & Zhengpu Wang
 
 author：Yi Yang & Zhengpu Wang
 
-![](image/image_-lbH3MG4lp.png)
+![](image/image_4cRpfNPSR0.png)
 
-![](image/image_MH7T15WuGE.png)
+![](image/image_DCJ3nBClIV.png)
 
 最核心的三门课，
 
