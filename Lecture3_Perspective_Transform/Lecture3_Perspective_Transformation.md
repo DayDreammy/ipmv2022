@@ -91,7 +91,7 @@ author：Yi Yang & Zhengpu Wang
 ## 1.1 向量点乘 dot pruduct
 
 $$
-\boldsymbol a · \boldsymbol b \\=a_1b_1 + a_2b_2+a_3b_3 \\= ||\boldsymbol a||_2||\boldsymbol b||_2cos\theta\\=\sqrt{\boldsymbol a·\boldsymbol a}\sqrt{\boldsymbol b·\boldsymbol b}\cos \theta \\=\sqrt{\boldsymbol a^T \boldsymbol a}\sqrt{\boldsymbol b^T \boldsymbol b}\cos \theta
+\boldsymbol a · \boldsymbol b \\ =a_1b_1 + a_2b_2+a_3b_3 \\ = ||\boldsymbol a||_2||\boldsymbol b||_2cos\theta \\ =\sqrt{\boldsymbol a·\boldsymbol a}\sqrt{\boldsymbol b·\boldsymbol b}\cos \theta \\ =\sqrt{\boldsymbol a^T \boldsymbol a}\sqrt{\boldsymbol b^T \boldsymbol b}\cos \theta
 $$
 
 ![](Lecture3_Perspective_Transformation.assets/image_9uEBsPYv7m-16558337165463.png)
