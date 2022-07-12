@@ -215,10 +215,14 @@ $$
 
 <div>
 
-$$ \boldsymbol R \boldsymbol R^T = \boldsymbol I \\\\\\
+$$ 
+       
+\boldsymbol R \boldsymbol R^T = \boldsymbol I \\\\\\
 \boldsymbol R^T \boldsymbol R  = \boldsymbol I \\\\\\
 {\boldsymbol R}^{-1} = {\boldsymbol R}^{T} \\\\\\
-|\det (\boldsymbol R)|=\boldsymbol 1, \text {where I is an identity matrix } $$
+|\det (\boldsymbol R)|=\boldsymbol 1, \text {where I is an identity matrix }
+       
+$$
        
 </div>
 
@@ -390,6 +394,7 @@ $$
 联立这两个等式，我们得到，
 
 $$
+
 \left[\begin{array}
 {ccc} 
 u_i\\v_i\\1
@@ -409,10 +414,11 @@ f_x & 0 & u_o \\
 x_i^C\\y_i^C\\z_i^C
 \end{array} 
 \right] 
+
 $$
 
-*   这里$\widetilde{\boldsymbol p}=[\boldsymbol p^T,1]^T=[u_i,v_i,1]^T$是$\boldsymbol p=[u_i,v_i]^T$的齐次坐标
-*   $u_o,v_o,f,s_x,s_y$是5个内参，有的课本会说$u_o,v_o,f_x,f_y$4个内参
+*   这里 $ \widetilde{\boldsymbol p}=[\boldsymbol p^T,1]^T=[u_i,v_i,1]^T $是 $ \boldsymbol p=[u_i,v_i]^T $ 的齐次坐标
+*   $ u_o,v_o,f,s_x,s_y $ 是5个内参，有的课本会说 $ u_o,v_o,f_x,f_y $ 4个内参
 
 定睛一看，这就是**相机坐标系到像素坐标系**的关系。可以写为：
 
