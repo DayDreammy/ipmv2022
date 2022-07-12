@@ -71,7 +71,7 @@ author：Yi Yang & Zhengpu Wang
 ## 1.1 向量点乘 dot pruduct
 
 $$
-\boldsymbol a · \boldsymbol b \\=a_1b_1 + a_2b_2+a_3b_3 \\= ||\boldsymbol a||_2||\boldsymbol b||_2cos\theta\\=\sqrt{\boldsymbol a·\boldsymbol a}\sqrt{\boldsymbol b·\boldsymbol b}\cos \theta \\=\sqrt{\boldsymbol a^T \boldsymbol a}\sqrt{\boldsymbol b^T \boldsymbol b}\cos \theta
+\boldsymbol a · \boldsymbol b \\ =a_1b_1 + a_2b_2+a_3b_3 \\ = ||\boldsymbol a||_2||\boldsymbol b||_2cos\theta \\ =\sqrt{\boldsymbol a·\boldsymbol a}\sqrt{\boldsymbol b·\boldsymbol b}\cos \theta \\ =\sqrt{\boldsymbol a^T \boldsymbol a}\sqrt{\boldsymbol b^T \boldsymbol b}\cos \theta
 $$
 
 ![](Lecture3_Perspective_Transformation.assets/image_9uEBsPYv7m-16558337165463.png)
@@ -213,10 +213,10 @@ $$
 
 > 三维正交阵
 
-$\boldsymbol R \boldsymbol R^T = \boldsymbol I \\
-\boldsymbol R^T \boldsymbol R  = \boldsymbol I \\
-{\boldsymbol R}^{-1} = {\boldsymbol R}^{T}\\
-|\det (\boldsymbol R)|=\boldsymbol 1, \text {where I is an identity matrix }$
+$$ \boldsymbol R \boldsymbol R^T = \boldsymbol I \\\\\\
+\boldsymbol R^T \boldsymbol R  = \boldsymbol I \\\\\\
+{\boldsymbol R}^{-1} = {\boldsymbol R}^{T} \\\\\\
+|\det (\boldsymbol R)|=\boldsymbol 1, \text {where I is an identity matrix } $$
 
 ![](Lecture3_Perspective_Transformation.assets/image_OtMGP7-59M-165583371654611.png)
 
