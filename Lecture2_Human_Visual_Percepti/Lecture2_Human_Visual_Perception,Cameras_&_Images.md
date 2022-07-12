@@ -2,40 +2,6 @@
 
 author：Yi Yang & Zhengpu Wang
 
-![](image/image_FKpwwjdaPa.png)
-
-时间：%DATE% %TIME%
-
-时间：2022/03/01 09:56
-
-## 线索
-
-*这里写主要线索*
-
-***
-
-1.
-
-2.
-
-3.
-
-4.
-
-5.
-
-<!---->
-
-1.
-
-## 笔记
-
-*这里是主要的笔记内容*
-
-***
-
-author：Yi Yang & Zhengpu Wang
-
 ![](image/image_FnfJUZlAzx.png)
 
 ## Human Visual Perception
