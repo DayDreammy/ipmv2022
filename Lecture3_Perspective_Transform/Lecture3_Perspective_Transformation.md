@@ -91,7 +91,7 @@ author：Yi Yang & Zhengpu Wang
 ## 1.1 向量点乘 dot pruduct
 
 $$
-\boldsymbol a · \boldsymbol b \\=a\_1b\_1 + a\_2b\_2+a\_3b\_3 \\= ||\boldsymbol a||\_2||\boldsymbol b||\_2cos\theta\\=\sqrt{\boldsymbol a·\boldsymbol a}\sqrt{\boldsymbol b·\boldsymbol b}\cos \theta \\=\sqrt{\boldsymbol a^T \boldsymbol a}\sqrt{\boldsymbol b^T \boldsymbol b}\cos \theta
+\boldsymbol a · \boldsymbol b \\=a_1b_1 + a_2b_2+a_3b_3 \\= ||\boldsymbol a||_2||\boldsymbol b||_2cos\theta\\=\sqrt{\boldsymbol a·\boldsymbol a}\sqrt{\boldsymbol b·\boldsymbol b}\cos \theta \\=\sqrt{\boldsymbol a^T \boldsymbol a}\sqrt{\boldsymbol b^T \boldsymbol b}\cos \theta
 $$
 
 ![](Lecture3_Perspective_Transformation.assets/image_9uEBsPYv7m-16558337165463.png)
@@ -122,7 +122,7 @@ $\lVert\boldsymbol a\rVert_{+\infty}  = \max_i  \lvert a_i\rvert$ ，$\lVert\bol
 
 $$
 \boldsymbol a \times \boldsymbol b \\
-=|| \boldsymbol a||\_2|| \boldsymbol b||\_2\sin(\theta)\boldsymbol n
+=|| \boldsymbol a||_2|| \boldsymbol b||_2\sin(\theta)\boldsymbol n
 $$
 
 ![](Lecture3_Perspective_Transformation.assets/image_kWyCz3Yjue-16558337165465.png)
@@ -135,9 +135,9 @@ $$
 [a]_x=\left[
 \begin{array}
 {ccc}
-0 & -a\_3 & a\_2\\
-a\_3 & 0 & -a\_1\\
--a\_2 & a\_1 & 0\\
+0 & -a_3 & a_2\\
+a_3 & 0 & -a_1\\
+-a_2 & a_1 & 0\\
 \end{array}
 \right]
 $$
@@ -384,8 +384,8 @@ $$
 *   镜头畸变并不存在在透视的相机模型，所以图像坐标系和像素坐标系可以用以下公式转换
 
 $$
-u\_i=u\_o+s\_x x\_i\\
-v\_i=v\_o+s\_y y\_i\\
+u_i=u_o+s_x x_i\\
+v_i=v_o+s_y y_i\\
 $$
 
 $\boldsymbol p_o=[u_o,v_o]^T$是图像中心，$s_x,s_y$分别是pixels per mm，
