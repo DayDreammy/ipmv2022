@@ -393,8 +393,7 @@ $$
 u_i\\v_i\\1
 \end{array} 
 \right] 
-=
-\frac{1}{z_i^C} 
+=\frac{1}{z_i^C} 
 \left[\begin{array}
 {ccc}  
 f_x & 0 & u_o \\
