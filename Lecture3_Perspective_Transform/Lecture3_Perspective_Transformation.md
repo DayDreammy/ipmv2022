@@ -233,9 +233,9 @@ $$
 
 > 三维正交阵
 
-$$ \boldsymbol R \boldsymbol R^T = \boldsymbol I \\
-\boldsymbol R^T \boldsymbol R  = \boldsymbol I \\
-{\boldsymbol R}^{-1} = {\boldsymbol R}^{T}\\
+$$ \boldsymbol R \boldsymbol R^T = \boldsymbol I \\\\
+\boldsymbol R^T \boldsymbol R  = \boldsymbol I \\\\
+{\boldsymbol R}^{-1} = {\boldsymbol R}^{T} \\\\
 |\det (\boldsymbol R)|=\boldsymbol 1, \text {where I is an identity matrix } $$
 
 ![](Lecture3_Perspective_Transformation.assets/image_OtMGP7-59M-165583371654611.png)
