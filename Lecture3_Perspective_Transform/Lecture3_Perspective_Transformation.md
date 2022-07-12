@@ -388,7 +388,6 @@ $$
 联立这两个等式，我们得到，
 
 $$
-
 \left[\begin{array}
 {ccc} 
 u_i\\v_i\\1
@@ -408,7 +407,6 @@ f_x & 0 & u_o \\
 x_i^C\\y_i^C\\z_i^C
 \end{array} 
 \right] 
-
 $$
 
 *   这里 $ \widetilde{\boldsymbol p}=[\boldsymbol p^T,1]^T=[u_i,v_i,1]^T $是 $ \boldsymbol p=[u_i,v_i]^T $ 的齐次坐标
@@ -420,7 +418,7 @@ $$
 \widetilde{\boldsymbol p} = \frac {1}{z_i^C}\boldsymbol K \boldsymbol p^C
 $$
 
-$\boldsymbol K$是内参矩阵：
+ $ \boldsymbol K $ 是内参矩阵：
 
 $$
 \boldsymbol K =
@@ -475,12 +473,4 @@ $$
 
 *这里写总结*
 
-***
 
-* 重要内容总结
-
-    1.
-
-    2.
-
-    3.
