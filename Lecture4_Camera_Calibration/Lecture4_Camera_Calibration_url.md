@@ -1,77 +1,35 @@
-* Lecture4\_Camera\_Calibration
+# Lecture4\_Camera\_Calibration
 
-  ## 目录
+author：Yi Yang & Zhengpu Wang
 
-  * *   [线索](#线索)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_5yU_XEUVOx.png)
 
-        *   [笔记](#笔记)
+# 1 WCS v.s. CCS v.s. IPCS v.s. PCS
 
-  * [1 WCS v.s. CCS v.s. IPCS v.s. PCS](#1-wcs-vs-ccs-vs-ipcs-vs-pcs)
+## 1.1坐标变换
 
-    *   [1.1坐标变换](#11坐标变换)
-    *   1.2 齐次坐标系 
+我们商定表示方法
 
-    *   [1.3消失点](#13消失点)
-        *   [给定两条平行线，求图像平面的消失点](#给定两条平行线求图像平面的消失点)
+*   WCS：World Coordinate System $(X^W,Y^W,Z^W)$
 
-        *   [下图中有多少个消失点](#下图中有多少个消失点)
+*   CCS：Camera Coordinate System $(X^C,Y^C,Z^C)$
 
-  * [2 Lens Distortion 镜头畸变](#2-lens-distortion-镜头畸变)
+*   IPCS/FCS：Image Plane Coordinate System or Film  Coordinate System$(x,y)$
 
-    *   *   [2.1径向畸变](#21径向畸变)
+*   PCS:Pixel Coordinate System $u,v$
 
-        *   [2.2 径向畸变矫正](#22-径向畸变矫正)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_EQPlJMp4l8.png)
 
-        *   [2.3切向畸变矫正](#23切向畸变矫正)
-
-  * [3 Camera Calibration相机标定](#3-camera-calibration相机标定)
-
-    *   *   *   [Step1:使用棋盘格图案定义真实世界坐标。](#step1使用棋盘格图案定义真实世界坐标)
-
-            *   [Step2：收集标定板的多张图片从不同的角度](#step2收集标定板的多张图片从不同的角度)
-
-            *   [Step3：找到标定板的二维坐标系](#step3找到标定板的二维坐标系)
-
-            *   [Step4：标定摄像机](#step4标定摄像机)
-
-            *   [Step5：计算重投影误差并调整校准](#step5计算重投影误差并调整校准)
-
-    *   [总结](#总结)
-
-  ## 笔记
-
-  *这里是主要的笔记内容*
-
-  ***
-
-  author：Yi Yang & Zhengpu Wang
-
-  ![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_5yU_XEUVOx.png)
-
-  # 1 WCS v.s. CCS v.s. IPCS v.s. PCS
-
-  ## 1.1坐标变换
-
-  我们商定表示方法
-
-  *   WCS：World Coordinate System $(X^W,Y^W,Z^W)$
-
-  *   CCS：Camera Coordinate System $(X^C,Y^C,Z^C)$
-
-  *   IPCS/FCS：Image Plane Coordinate System or Film  Coordinate System$(x,y)$
-
-  *   PCS:Pixel Coordinate System $u,v$
-
-  ![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_EQPlJMp4l8.png)
-
-  回顾 Lecture3，我们总结得到：
+回顾 Lecture3，我们总结得到：
 
 
 - WCS $ \leftrightarrow  $CCS$ \leftrightarrow  $IPCS ，通过 小孔成像模型 Pinhole camera model
-
-		$ \boldsymbol p^C=\boldsymbol R \boldsymbol p^W +\boldsymbol t  $ or 齐次矩阵 $\widetilde{\boldsymbol p}^C = \boldsymbol P\widetilde{\boldsymbol p}^W$
-	
-			齐次矩阵的意义（重点）
+  $$
+  \boldsymbol p^C=\boldsymbol R \boldsymbol p^W +\boldsymbol t   
+  \\
+  \widetilde{\boldsymbol p}^C = \boldsymbol P\widetilde{\boldsymbol p}^W
+  $$
+  
 
 - $ \boldsymbol P_1  = \left[ \begin{array}  {c|c}  \boldsymbol R   & \boldsymbol t \\\hline \boldsymbol 0^T & \boldsymbol 1 \\ \end {array} \right]=\left[ \begin{array}
   {c|c}
@@ -132,13 +90,13 @@ $\boldsymbol K$是内参矩阵：
 
 $$
 \boldsymbol K =
-\left\[\begin{array}
+\left[\begin{array}
 {ccc}\
 f\_x & 0 & u\_o \\
 0 & f\_y & v\_o \\
 0 & 0   & 1   \\
 \end{array}
-\right]\
+\right]
 $$
 
 ![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_QpeeP9w3-n.png)
