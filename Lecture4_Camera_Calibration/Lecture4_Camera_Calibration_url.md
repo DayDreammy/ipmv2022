@@ -30,7 +30,6 @@ author：Yi Yang & Zhengpu Wang
   \widetilde{\boldsymbol p}^C = \boldsymbol P\widetilde{\boldsymbol p}^W
   $$
   
-
 - $ \boldsymbol P_1  = \left[ \begin{array}  {c|c}  \boldsymbol R   & \boldsymbol t \\\hline \boldsymbol 0^T & \boldsymbol 1 \\ \end {array} \right]=\left[ \begin{array}
   {c|c}
   \boldsymbol 1   & \boldsymbol t \\\hline
