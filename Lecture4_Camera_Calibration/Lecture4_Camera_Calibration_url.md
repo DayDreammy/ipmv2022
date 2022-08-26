@@ -46,7 +46,7 @@
 
   author：Yi Yang & Zhengpu Wang
 
-  ![](Lecture4_Camera_Calibration.assets/image_5yU_XEUVOx.png)
+  ![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_5yU_XEUVOx.png)
 
   # 1 WCS v.s. CCS v.s. IPCS v.s. PCS
 
@@ -62,7 +62,7 @@
 
   *   PCS:Pixel Coordinate System $u,v$
 
-  ![](Lecture4_Camera_Calibration.assets/image_EQPlJMp4l8.png)
+  ![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_EQPlJMp4l8.png)
 
   回顾 Lecture3，我们总结得到：
 
@@ -141,7 +141,7 @@ f\_x & 0 & u\_o \\
 \right]\
 $$
 
-![](Lecture4_Camera_Calibration.assets/image_QpeeP9w3-n.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_QpeeP9w3-n.png)
 
 ## 1.2 齐次坐标系 \widetilde{\boldsymbol p} = \[\boldsymbol p,1]^T
 
@@ -149,7 +149,7 @@ $$
 
 *   它们的优点是点的坐标（包括无穷远处的点）可以用有限的坐标来表示。
 
-![](Lecture4_Camera_Calibration.assets/image_bhDITDhbXA.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_bhDITDhbXA.png)
 
 ### 仿射变换 Affine transformation:
 
@@ -161,7 +161,7 @@ $$
     0         & 0           & 1 \\
     \end{array} \right]$，$\boldsymbol p\`=\boldsymbol H \boldsymbol p$
 
-![](Lecture4_Camera_Calibration.assets/image_sjCX0p1VYW.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_sjCX0p1VYW.png)
 
 旋转，\$\boldsymbol H = \left\[  \begin{array}{}
 \cos\theta & -\sin\theta & 0 \\
@@ -182,7 +182,7 @@ $$
     0         & 0           & 1 \\
     \end{array} \right]$，$\boldsymbol p\`=\boldsymbol H \boldsymbol p$
 
-![](Lecture4_Camera_Calibration.assets/image_F2dELW7KDv.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_F2dELW7KDv.png)
 
 平移
 
@@ -192,7 +192,7 @@ $$
     0         & 0           & 1 \\
     \end{array} \right]$，$\boldsymbol p\`=\boldsymbol H \boldsymbol p$
 
-![](Lecture4_Camera_Calibration.assets/image_NoYM-rMzXG.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_NoYM-rMzXG.png)
 
 先旋转，再平移\$\boldsymbol H = \left\[  \begin{array}{}
 \cos\theta & -\sin\theta & t\_x \\
@@ -221,7 +221,7 @@ $，$\boldsymbol p\`=\boldsymbol H \boldsymbol p\$
     0         & 0           & 1 \\
     \end{array} \right]$，$\boldsymbol p\`=\boldsymbol H \boldsymbol p$
 
-![](Lecture4_Camera_Calibration.assets/image_6jw9Lmf3Rs.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_6jw9Lmf3Rs.png)
 
 旋转平移+缩放$ \boldsymbol H = \left\[  \begin{array}{}
 a & -b & t\_x \\
@@ -239,7 +239,7 @@ b & a  & t\_y \\
     0         & 0           & 1 \\
     \end{array} \right]$，$\boldsymbol p\`=\boldsymbol H \boldsymbol p$
 
-![](Lecture4_Camera_Calibration.assets/image_r6g-D8WWO8.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_r6g-D8WWO8.png)
 
 沿Y轴镜像。这个怎么看呢，有个好办法。
 
@@ -257,7 +257,7 @@ b & a  & t\_y \\
 0    \\
 \end{array} \right]$，基向量$\boldsymbol y$没变。如下图所示，坐标系相当于对y轴做镜像。
 
-![](Lecture4_Camera_Calibration.assets/image_OVUH09zH-v.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_OVUH09zH-v.png)
 
 *   $\boldsymbol H = \left\[  \begin{array}{}
     1-a & 0 & 0 \\
@@ -265,7 +265,7 @@ b & a  & t\_y \\
     0         & 0           & 1 \\
     \end{array} \right]$，$\boldsymbol p\`=\boldsymbol H \boldsymbol p$
 
-![](Lecture4_Camera_Calibration.assets/image_nU6ILyh6bH.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_nU6ILyh6bH.png)
 
 拉伸。还是上面的方法，x,y基向量方向没变，大小变了。
 
@@ -275,11 +275,11 @@ b & a  & t\_y \\
     0         & 0           & 1 \\
     \end{array} \right]$，$\boldsymbol p\`=\boldsymbol H \boldsymbol p$
 
-![](Lecture4_Camera_Calibration.assets/image_ZnuEeQ9IcR.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_ZnuEeQ9IcR.png)
 
 向斜右上方45度挤压（铁丝围成的长方形，沿着对角线往外拉，就这个效果）。同理，原来x=\[1，0]水平向右，现在纵向方向又有所改变。
 
-![](Lecture4_Camera_Calibration.assets/image_BHYgkKA-9i.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_BHYgkKA-9i.png)
 
 *   $\boldsymbol H = \left\[  \begin{array}{}
     1 & s' & 0 \\
@@ -287,7 +287,7 @@ b & a  & t\_y \\
     0         & 0           & 1 \\
     \end{array} \right]$，$\boldsymbol p'=\boldsymbol H \boldsymbol p$
 
-![](Lecture4_Camera_Calibration.assets/image_agFVCzgDGG.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_agFVCzgDGG.png)
 
 横向拉伸。
 
@@ -297,7 +297,7 @@ b & a  & t\_y \\
     0         & 0           & 1 \\
     \end{array} \right]$，$\boldsymbol p'=\boldsymbol H \boldsymbol p$
 
-![](Lecture4_Camera_Calibration.assets/image_3Fdxe75r17.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_3Fdxe75r17.png)
 
 《蹂 躏》上面说过的，旋转，平移，拉伸，缩放都用上了。
 
@@ -312,9 +312,9 @@ b & a  & t\_y \\
     x+y=3\\
     \end{cases}$，试计算两条线的交点。
 
-![](Lecture4_Camera_Calibration.assets/image_SdZnxuF9H4.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_SdZnxuF9H4.png)
 
-![](Lecture4_Camera_Calibration.assets/image_cYXPv9lEFG.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_cYXPv9lEFG.png)
 
 总结一下，齐次坐标系方法先升维再降维，有一个思维上的转换，带着投影的思路去想容易明白。
 
@@ -332,11 +332,11 @@ b & a  & t\_y \\
 
 > baidu百科：**平行线的视觉相交点。** 如当你沿着铁路线去看两条铁轨，沿着公路线去看两边排列整齐的树木时，两条平行的铁轨或两排树木连线交与很远很远的某一**点**，这**点**在透视图中叫做**消失点**。
 
-![](Lecture4_Camera_Calibration.assets/image_twWeYq4ygj.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_twWeYq4ygj.png)
 
 [艺术中的消失点是什么？ (eferrit.com)](https://zhcn.eferrit.com/艺术中的消失点是什么？/ "艺术中的消失点是什么？ (eferrit.com)")
 
-![](Lecture4_Camera_Calibration.assets/image_iPJgsMuJXb.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_iPJgsMuJXb.png)
 
 *   左图，1个消失点
 
@@ -344,19 +344,19 @@ b & a  & t\_y \\
 
 ### 给定两条平行线，求图像平面的消失点
 
-![](Lecture4_Camera_Calibration.assets/image_yd69P4HuqL.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_yd69P4HuqL.png)
 
 ![](image/J\$\[JC24\~IDHCQ_ASDH\$\[OVO_QIQn-ULFqE.jpg)
 
 ### 下图中有多少个消失点
 
-![](Lecture4_Camera_Calibration.assets/image_balcWJyOAr.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_balcWJyOAr.png)
 
-![](Lecture4_Camera_Calibration.assets/image_6R4FvXFdcF.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_6R4FvXFdcF.png)
 
 # 2 Lens Distortion 镜头畸变
 
-![https://www.qinxing.xyz/posts/b7ea425d/](Lecture4_Camera_Calibration.assets/image_XHxoN2_eXN.png "https://www.qinxing.xyz/posts/b7ea425d/")
+![https://www.qinxing.xyz/posts/b7ea425d/](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_XHxoN2_eXN.png "https://www.qinxing.xyz/posts/b7ea425d/")
 
 > 由于透镜的固有特性（凸透镜汇聚光线、凹透镜发散光线）导致成像直线会变成曲线。
 
@@ -378,7 +378,7 @@ b & a  & t\_y \\
 
 [cvapp2022\_fan.pdf (ruirangerfan.com)](https://www.ruirangerfan.com/pdf/cvapp2022_fan.pdf "cvapp2022_fan.pdf (ruirangerfan.com)")
 
-![](Lecture4_Camera_Calibration.assets/image_jMbIwXpcO-.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_jMbIwXpcO-.png)
 
 ### 2.1径向畸变
 
@@ -396,7 +396,7 @@ b & a  & t\_y \\
 
 *   直线不直
 
-![无畸变 桶形畸变  枕形畸变 八字胡畸变（更加通用，R.Fan更喜欢）](Lecture4_Camera_Calibration.assets/image_3hV9jueAs9.png "无畸变 桶形畸变  枕形畸变 八字胡畸变（更加通用，R.Fan更喜欢）")
+![无畸变 桶形畸变  枕形畸变 八字胡畸变（更加通用，R.Fan更喜欢）](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_3hV9jueAs9.png "无畸变 桶形畸变  枕形畸变 八字胡畸变（更加通用，R.Fan更喜欢）")
 
 | 畸变       | 特点                                                         | 场景                                         |
 | ---------- | ------------------------------------------------------------ | -------------------------------------------- |
@@ -431,7 +431,7 @@ $$
 
 $p\_1$ 和$  p\_2  $是内参，同样可以根据一堆带有平面检查板图案的图片估计出来。
 
-![](Lecture4_Camera_Calibration.assets/image_m4WbVkRf92.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_m4WbVkRf92.png)
 
 # 3 Camera Calibration相机标定
 
@@ -445,15 +445,15 @@ $p\_1$ 和$  p\_2  $是内参，同样可以根据一堆带有平面检查板图
 
 #### Step1:使用棋盘格图案定义真实世界坐标。
 
-![](Lecture4_Camera_Calibration.assets/image_fT3XlHOKzW.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_fT3XlHOKzW.png)
 
 #### Step2：收集标定板的多张图片从不同的角度
 
-![R.Fan的第一次深度相机标定，2016，怀念旧时光](Lecture4_Camera_Calibration.assets/image_CA76ee3Ofb.png "R.Fan的第一次深度相机标定，2016，怀念旧时光")
+![R.Fan的第一次深度相机标定，2016，怀念旧时光](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_CA76ee3Ofb.png "R.Fan的第一次深度相机标定，2016，怀念旧时光")
 
 #### Step3：找到标定板的二维坐标系
 
-![](Lecture4_Camera_Calibration.assets/image_zS2jVOE3jY.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_zS2jVOE3jY.png)
 
 R.Fan 的三个提醒：
 
@@ -465,19 +465,19 @@ R.Fan 的三个提醒：
 
 #### Step4：标定摄像机
 
-![Camera-centric result v.s.pattern-centric result.](Lecture4_Camera_Calibration.assets/image_werr04rCyW.png "Camera-centric result v.s.pattern-centric result.")
+![Camera-centric result v.s.pattern-centric result.](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_werr04rCyW.png "Camera-centric result v.s.pattern-centric result.")
 
 #### Step5：计算重投影误差并调整校准
 
-![重投影误差 （Re-projection error）](Lecture4_Camera_Calibration.assets/image_RFi42ipCNn.png "重投影误差 （Re-projection error）")
+![重投影误差 （Re-projection error）](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_RFi42ipCNn.png "重投影误差 （Re-projection error）")
 
 还记得Lecture3最后的故事吗？
 
 [Lecture3\_Perspective\_Transformation](../Lecture3_Perspective_Transform/Lecture3_Perspective_Transformation.md "Lecture3_Perspective_Transformation")
 
-![](Lecture4_Camera_Calibration.assets/image_N_M1q9tUn-.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_N_M1q9tUn-.png)
 
-![](Lecture4_Camera_Calibration.assets/image_FUtUHXbuqH.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture4_Camera_Calibration/Lecture4_Camera_Calibration.assets/image_FUtUHXbuqH.png)
 
 由2.4知**相机坐标系到像素坐标系**的关系
 

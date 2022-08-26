@@ -58,26 +58,6 @@
 
 * [总结](#总结)
 
-## 线索
-
-*这里写主要线索*
-
-***
-
-1.
-
-2.
-
-3.
-
-4.
-
-5.
-
-## 笔记
-
-*这里是主要的笔记内容*
-
 ***
 
 author：Yi Yang & Zhengpu Wang
@@ -91,7 +71,7 @@ author：Yi Yang & Zhengpu Wang
 ## 1.1 向量点乘 dot pruduct
 
 $$
-\boldsymbol a · \boldsymbol b \\=a_1b_1 + a_2b_2+a_3b_3 \\= ||\boldsymbol a||_2||\boldsymbol b||_2cos\theta\\=\sqrt{\boldsymbol a·\boldsymbol a}\sqrt{\boldsymbol b·\boldsymbol b}\cos \theta \\=\sqrt{\boldsymbol a^T \boldsymbol a}\sqrt{\boldsymbol b^T \boldsymbol b}\cos \theta
+\boldsymbol a · \boldsymbol b \\ =a_1b_1 + a_2b_2+a_3b_3 \\ = ||\boldsymbol a||_2||\boldsymbol b||_2cos\theta \\ =\sqrt{\boldsymbol a·\boldsymbol a}\sqrt{\boldsymbol b·\boldsymbol b}\cos \theta \\ =\sqrt{\boldsymbol a^T \boldsymbol a}\sqrt{\boldsymbol b^T \boldsymbol b}\cos \theta
 $$
 
 ![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/Lecture3_Perspective_Transformation.assets/image_9uEBsPYv7m-16558337165463.png)
@@ -233,10 +213,10 @@ $$
 
 > 三维正交阵
 
-$\boldsymbol R \boldsymbol R^T = \boldsymbol I \\
+$$ \boldsymbol R \boldsymbol R^T = \boldsymbol I \\
 \boldsymbol R^T \boldsymbol R  = \boldsymbol I \\
-{\boldsymbol R}^{-1} = {\boldsymbol R}^{T}\\
-|\det (\boldsymbol R)|=\boldsymbol 1, \text {where I is an identity matrix }$
+{\boldsymbol R}^{-1} = {\boldsymbol R}^{T} \\
+|\det (\boldsymbol R)|=\boldsymbol 1, \text {where I is an identity matrix } $$
 
 ![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/Lecture3_Perspective_Transformation.assets/image_OtMGP7-59M-165583371654611.png)
 
@@ -262,7 +242,7 @@ $\boldsymbol R \boldsymbol R^T = \boldsymbol I \\
 
 > 相机坐标系（camera coordinate system）的原点通常放在光心（或相机中心）。
 
-![相机成像示意图](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/Lecture3_Perspective_Transformation.assets/image_KeVdxYurOH-165583371654613.png "相机成像示意图")
+
 
 ![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/Lecture3_Perspective_Transformation.assets/image_TySi0Cn0MN-165583371654614.png)
 
@@ -317,9 +297,9 @@ $$
 
 > **实际的深度**$Z^C$**并不是已知的**，所以实际上相机坐标系里的图像是在光轴的射线上，可以自由滑动的。$Z^C$**需要双目相机测量或者机器学习估计深度得到。**
 
-引入齐次坐标，用一个3D的点$(x^`,y^`,z^`)$，来表示2D的点$(x,y,)$（通过增加一个虚构的点）
+引入齐次坐标，用一个3D的点 $(x^`,y^`,z^`)$ ，来表示2D的点 $(x,y,)$（通过增加一个虚构的点）
 
-Note:$ (x,y) = (x,y,1)=(2x,2y,2)=(kx,ky,k)  $for 任意不为0的k
+Note: $ (x,y) = (x,y,1)=(2x,2y,2)=(kx,ky,k)  $for 任意不为0的k
 
 ![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/Lecture3_Perspective_Transformation.assets/image_xYqVZrnbAB-165583371654723.png)
 
@@ -373,7 +353,9 @@ $$
 
 ## 2.4 IPCS to PCS（图像坐标系到像素坐标系，通过内参矩阵Intrinsic matrix）
 
-![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/Lecture3_Perspective_Transformation.assets/image_h55aCcAAY9-165583371654725.png)
+![image-20220712111807641](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/Lecture3_Perspective_Transformation.assets/image-20220712111807641.png)
+
+
 
 > 图像坐标系的原点通常情况下是成像平面的中点，单位是mm，属于物理单位。而像素坐标系的单位是pixel，我们平常描述一个像素点都是几行几列。
 
@@ -392,7 +374,7 @@ $\boldsymbol p_o=[u_o,v_o]^T$是图像中心，$s_x,s_y$分别是pixels per mm�
 
 结合下面这个图更好理解，1pixel=dx mm，$s\_x = 1/dx$pixel/mm
 
-![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/Lecture3_Perspective_Transformation.assets/image_WYUzCLYj1g-165583371654727.png)
+![image-20220712111748507](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture3_Perspective_Transform/Lecture3_Perspective_Transformation.assets/image-20220712111748507.png)
 
 我们现在得到了两个等式，
 $$

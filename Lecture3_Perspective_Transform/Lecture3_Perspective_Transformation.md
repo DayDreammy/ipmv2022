@@ -213,9 +213,9 @@ $$
 
 > 三维正交阵
 
-$$ \boldsymbol R \boldsymbol R^T = \boldsymbol I \\\\\\
-\boldsymbol R^T \boldsymbol R  = \boldsymbol I \\\\\\
-{\boldsymbol R}^{-1} = {\boldsymbol R}^{T} \\\\\\
+$$ \boldsymbol R \boldsymbol R^T = \boldsymbol I \\
+\boldsymbol R^T \boldsymbol R  = \boldsymbol I \\
+{\boldsymbol R}^{-1} = {\boldsymbol R}^{T} \\
 |\det (\boldsymbol R)|=\boldsymbol 1, \text {where I is an identity matrix } $$
 
 ![](Lecture3_Perspective_Transformation.assets/image_OtMGP7-59M-165583371654611.png)
@@ -242,7 +242,7 @@ $$ \boldsymbol R \boldsymbol R^T = \boldsymbol I \\\\\\
 
 > 相机坐标系（camera coordinate system）的原点通常放在光心（或相机中心）。
 
-![相机成像示意图](Lecture3_Perspective_Transformation.assets/image_KeVdxYurOH-165583371654613.png "相机成像示意图")
+
 
 ![](Lecture3_Perspective_Transformation.assets/image_TySi0Cn0MN-165583371654614.png)
 
@@ -353,7 +353,9 @@ $$
 
 ## 2.4 IPCS to PCS（图像坐标系到像素坐标系，通过内参矩阵Intrinsic matrix）
 
-![](Lecture3_Perspective_Transformation.assets/image_h55aCcAAY9-165583371654725.png)
+![image-20220712111807641](Lecture3_Perspective_Transformation.assets/image-20220712111807641.png)
+
+
 
 > 图像坐标系的原点通常情况下是成像平面的中点，单位是mm，属于物理单位。而像素坐标系的单位是pixel，我们平常描述一个像素点都是几行几列。
 
@@ -372,7 +374,7 @@ $\boldsymbol p_o=[u_o,v_o]^T$是图像中心，$s_x,s_y$分别是pixels per mm�
 
 结合下面这个图更好理解，1pixel=dx mm，$s\_x = 1/dx$pixel/mm
 
-![](Lecture3_Perspective_Transformation.assets/image_WYUzCLYj1g-165583371654727.png)
+![image-20220712111748507](Lecture3_Perspective_Transformation.assets/image-20220712111748507.png)
 
 我们现在得到了两个等式，
 $$
