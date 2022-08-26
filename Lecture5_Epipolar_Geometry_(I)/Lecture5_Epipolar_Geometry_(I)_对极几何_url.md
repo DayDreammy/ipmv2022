@@ -121,7 +121,7 @@
 
 author：Yi Yang & Zhengpu Wang
 
-![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture5_Epipolar_Geometry_(I)//image_ExLZFQ9lOu.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture5_Epipolar_Geometry_(I)/image/image_ExLZFQ9lOu.png)
 
 # 课前闲聊
 
@@ -135,7 +135,7 @@ author：Yi Yang & Zhengpu Wang
 
 ## 1.1 Cross product
 
-![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture5_Epipolar_Geometry_(I)//image_rvj76f0iac.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture5_Epipolar_Geometry_(I)/image/image_rvj76f0iac.png)
 
 $\bm a \times \bm b = \[\bm a]*\times \bm b = - \[\bm b]*\times \bm a ,$where反对称矩阵 $\[\bm a]\_\times$:
 
@@ -173,11 +173,11 @@ $$
 
 ## 1.3矩阵的特征值分解
 
-![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture5_Epipolar_Geometry_(I)//image_mFLz2vu3YM.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture5_Epipolar_Geometry_(I)/image/image_mFLz2vu3YM.png)
 
 > 矩阵代表着某种变换，比如让向量平移，旋转，拉伸等等。而一个向量乘以一个矩阵却只会改变长度，而不改变方向的话，那这个向量就是这个矩阵的特征向量。
 
-![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture5_Epipolar_Geometry_(I)//image_fA3gn1YsZS.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture5_Epipolar_Geometry_(I)/image/image_fA3gn1YsZS.png)
 
 *   Q是由A的特征向量得到的。$\bm Q=\[v\_1,v\_2,,,,v\_n] ,$通过定义变形$(\bm A-\lambda)v\_i=0$，得到$v\_i$，进而得到$\bm Q$
 
@@ -277,7 +277,7 @@ $$
 
 一个双目系统的对极几何例子：
 
-![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture5_Epipolar_Geometry_(I)//image_baU0Fhqoyj.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture5_Epipolar_Geometry_(I)/image/image_baU0Fhqoyj.png)
 
 *   平面 $\Pi \_L$和$\Pi \_R$代表了左右图像平面
 
@@ -295,9 +295,9 @@ $$
 
 介绍清楚基本模型后，引入对极几何的三个概念
 
-![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture5_Epipolar_Geometry_(I)//image_LULu6uLuCD.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture5_Epipolar_Geometry_(I)/image/image_LULu6uLuCD.png)
 
-![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture5_Epipolar_Geometry_(I)//image_YxUVf1wKm1.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture5_Epipolar_Geometry_(I)/image/image_YxUVf1wKm1.png)
 
 *   $\bm e\_L^C$**和**$\bm e\_R^C$称作左右**对极点**。
 
@@ -323,9 +323,9 @@ $$
 
 所以如果可以从对极线上找，就大大减小了工作量。
 
-![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture5_Epipolar_Geometry_(I)//image__kpCeFd1fg.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture5_Epipolar_Geometry_(I)/image/image__kpCeFd1fg.png)
 
-![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture5_Epipolar_Geometry_(I)//image_nxYCsTaJVJ.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture5_Epipolar_Geometry_(I)/image/image_nxYCsTaJVJ.png)
 
 接下来会介绍3个重要的矩阵。Essential matrix , Fundamental matrix ,homograhpy matrix
 
@@ -448,7 +448,7 @@ $$
 
 [04-stereo-systems.pdf](file/04-stereo-systems_eD7Y3gzSyV.pdf)
 
-![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture5_Epipolar_Geometry_(I)//image_1T5M6ILf2W.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture5_Epipolar_Geometry_(I)/image/image_1T5M6ILf2W.png)
 
 使用SVD分解E,$\bm E =\bm  U \bm \sum \bm V^T$,where
 
@@ -514,7 +514,7 @@ $$
 
 观察发现，红线左边这一列，上下相反。右边这一列，上下成转置关系。
 
-![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture5_Epipolar_Geometry_(I)//image_1TjjBC2ICw.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture5_Epipolar_Geometry_(I)/image/image_1TjjBC2ICw.png)
 
 #### 分类讨论4种可能的解
 
@@ -624,7 +624,7 @@ $\bm R$ 同样有两个解，$\bm R =  \bm U \bm W\_1 \bm V^T$或者$\bm R =  \b
 
 由于$ \bm E = \[t]*\times \bm R  $, $\[\bm t]*\times = s \bm U \bm Z \bm U^T$,$\bm R = \bm U \bm W \bm V^T$或$\bm R = \bm U \bm W^T \bm V^T$,所以从Essential matrix 求解相机的旋转和平移共有4个解。
 
-![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture5_Epipolar_Geometry_(I)//image_MDrZwjUOu0.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture5_Epipolar_Geometry_(I)/image/image_MDrZwjUOu0.png)
 
 (a)是正解。如何判断？
 
@@ -674,7 +674,7 @@ $$
 
 $ \bm F  $有7个自由度。一个齐次矩阵homogeneous matrix 有8个独立系数，
 
-![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture5_Epipolar_Geometry_(I)//image_2eu8FftRWu.png)
+![](https://cdn.jsdelivr.net/gh/DayDreammy/ipmv2022@main/Lecture5_Epipolar_Geometry_(I)/image/image_2eu8FftRWu.png)
 
 ## 2.4 Homography matrix 单应矩阵
 
